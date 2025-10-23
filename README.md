@@ -48,7 +48,7 @@ Whether you need to check expiry dates, validate certificate chains, or bundle f
 Clone the repository and make the script executable:
 ```bash
 git clone https://github.com/yourusername/ssl-cert-utility.git
-cd ssl-cert-utility
+cd SSL-Utility
 chmod +x ssl-cert.sh
 
 
