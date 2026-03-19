@@ -17,6 +17,7 @@ Install via git SSH
 - [Bash Bundler:](bundler/bundler.sh) Bundels Multipe shell scripts into one
 - [SSL Utilities:](ssl/ssl.sh) Script to generate SSL Zertifikate for nginx from namecheap and validate them
 - [File Watcher:](watcher/watcher.sh) Watchess the FIle system for changes and perform then definded Actions
+- [Text Colors:](colors/textcolors.sh) Colorfull outputs
 
 ## Authors
 
