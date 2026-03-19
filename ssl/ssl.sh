@@ -128,12 +128,12 @@ case "$command" in
         domain=$1
         shift
         if [[ -z $domain ]];then
-            color_red "Kein Domain Name angegeben"
+            color_red "No Domain given"
             color_red "use -a to see all arguments"
             false
             exit
         fi
-        color_green "Ablaufsdatum von $domain"
+        color_green "Expiring from $domain"
 
         echo | openssl s_client -servername $domain -connect $domain:443 2>/dev/null | openssl x509 -noout -dates
     ;;
@@ -229,7 +229,7 @@ case "$command" in
         newfile=$1 # ? Neue Datei ganzer pfad als parameter gegeben
         shift
         if [[ -z $newfile ]];then
-            color_red "no File given"
+            color_red "No File given"
             false
             exit
         fi
@@ -334,9 +334,7 @@ case "$command" in
         echo ""
         color_green "-a               Shows a List with required all arguments for the command"
     ;;
-
-        # Default 
-    *)
+    *)   # Default 
         color_red "Error: No such command $command"
         color_red "Try --help for help."
         false
