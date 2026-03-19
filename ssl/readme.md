@@ -50,5 +50,5 @@ Clone the repository and make the script executable:
 git clone https://github.com/yourusername/ssl-cert-utility.git
 cd SSL-Utility
 chmod +x ssl-cert.sh
-
+```
 
